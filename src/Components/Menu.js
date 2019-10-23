@@ -1,73 +1,84 @@
-import React from "react";
+import React, { Component } from "react";
+import "./Menu.css";
 
-const Menu = () => {
-  return (
-    <div className="menu-component">
-      <nav>
-        {" "}
-        Linus
-        <div>
-          <ul>
-            <li>
-              <i class="fas fa-user-circle" />
-              <a
-                href="https://www.getlinus.io"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {" "}
-                Accounts{" "}
-              </a>
-            </li>
-            <li>
-              <i class="fas fa-file-invoice-dollar" />
-              <a
-                href="https://www.getlinus.io"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {" "}
-                Ledger{" "}
-              </a>
-            </li>
-            <li>
-              <i class="fas fa-piggy-bank" />
-              <a
-                href="https://www.getlinus.io"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {" "}
-                Finance{" "}
-              </a>
-            </li>
-            <li>
-              <i class="fas fa-book-open" />
-              <a
-                href="https://www.getlinus.io"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {" "}
-                Learn{" "}
-              </a>
-            </li>
-            <li>
-              <i class="fas fa-store" />
-              <a
-                href="https://www.getlinus.io"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {" "}
-                Marketplace{" "}
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-  );
-};
+export default class Menu extends Component {
+  constructor() {
+    super();
+    this.state = {
+      isHovering: false
+    };
+  }
 
-export default Menu;
+  hovering = () => {
+    console.log("hovering");
+  };
+  render() {
+    return (
+      <div className="menu-component" onMouseEnter={this.hovering}>
+        <nav>
+          {" "}
+          Linus
+          <div className="menu-items">
+            <ul>
+              <li>
+                <span class="fas fa-user-circle fa-sm fa-fw" />
+                <a
+                  href="https://www.getlinus.io"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {" "}
+                  Accounts{" "}
+                </a>
+              </li>
+              <li>
+                <span class="fas fa-file-invoice-dollar fa-sm fa-fw" />
+                <a
+                  href="https://www.getlinus.io"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {" "}
+                  Ledger{" "}
+                </a>
+              </li>
+              <li>
+                <span class="fas fa-piggy-bank fa-sm fa-fw" />
+                <a
+                  href="https://www.getlinus.io"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {" "}
+                  Finance{" "}
+                </a>
+              </li>
+              <li>
+                <span class="fas fa-book-open fa-sm fa-fw" />
+                <a
+                  href="https://www.getlinus.io"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {" "}
+                  Learn{" "}
+                </a>
+              </li>
+              <li>
+                <span class="fas fa-store fa-sm fa-fw" />
+                <a
+                  href="https://www.getlinus.io"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {" "}
+                  Marketplace{" "}
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    );
+  }
+}
