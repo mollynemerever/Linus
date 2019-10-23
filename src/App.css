@@ -8,3 +8,17 @@
   font-size: calc(10px + 2vmin); */
   color: black;
 }
+
+ul {
+  list-style-type: none;
+}
+
+li a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu-component {
+  background-color: #4e8d8a;
+  color: white;
+}
