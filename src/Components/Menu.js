@@ -5,16 +5,25 @@ export default class Menu extends Component {
   constructor() {
     super();
     this.state = {
-      isHovering: false
+      expandedMenu: false
     };
   }
 
-  hovering = () => {
-    console.log("hovering");
+  expandMenu = () => {
+    this.setState({ expandedMenu: true });
   };
+
+  collapseMenu = () => {
+    this.setState({ expandedMenu: false });
+  };
+
   render() {
     return (
-      <div className="menu-component" onMouseEnter={this.hovering}>
+      <div
+        className="menu-component"
+        onMouseEnter={this.expandMenu}
+        onMouseOut={this.collapseMenu}
+      >
         <nav>
           {" "}
           Linus
