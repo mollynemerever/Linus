@@ -1,5 +1,10 @@
-body {
+body,
+html,
+#root,
+.App {
   margin: 0;
+  height: 100% !important;
+  width: 100%;
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

@@ -1,0 +1,40 @@
+ul {
+  list-style-type: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+li {
+  margin: 10px;
+  display: block;
+}
+
+li a {
+  color: white;
+  text-decoration: none;
+
+  /* padding: 8px 8px 8px 32px; */
+}
+
+li span {
+  padding-right: 20px;
+  padding-left: 0px;
+}
+.fa-store:before {
+  height: 100%;
+}
+
+a:hover {
+  font-style: italic;
+}
+
+.menu-component {
+  background-color: #4e8d8a;
+  color: white;
+  height: 100%;
+  width: 250px;
+  position: fixed; /*stays despite scrolling */
+}
