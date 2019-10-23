@@ -10,6 +10,7 @@ const Menu = () => {
           href="https://www.getlinus.io"
           target="_blank"
           rel="noopener noreferrer"
+          class="fas fa-user-circle"
         >
           {" "}
           Accounts{" "}
@@ -18,6 +19,7 @@ const Menu = () => {
           href="https://www.getlinus.io"
           target="_blank"
           rel="noopener noreferrer"
+          class="fas fa-file-invoice-dollar"
         >
           {" "}
           Ledger{" "}
@@ -26,6 +28,7 @@ const Menu = () => {
           href="https://www.getlinus.io"
           target="_blank"
           rel="noopener noreferrer"
+          class="fas fa-piggy-bank"
         >
           {" "}
           Finance{" "}
@@ -34,6 +37,7 @@ const Menu = () => {
           href="https://www.getlinus.io"
           target="_blank"
           rel="noopener noreferrer"
+          class="fas fa-book-open"
         >
           {" "}
           Learn{" "}
@@ -42,6 +46,7 @@ const Menu = () => {
           href="https://www.getlinus.io"
           target="_blank"
           rel="noopener noreferrer"
+          class="fas fa-store"
         >
           {" "}
           Marketplace{" "}
