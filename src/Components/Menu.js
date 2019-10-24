@@ -5,16 +5,16 @@ export default class Menu extends Component {
   constructor() {
     super();
     this.state = {
-      expandedMenu: false
+      expandedMenu: "55px"
     };
   }
 
   expandMenu = () => {
-    this.setState({ expandedMenu: true });
+    this.setState({ expandedMenu: "250px" });
   };
 
   collapseMenu = () => {
-    this.setState({ expandedMenu: false });
+    this.setState({ expandedMenu: "55px" });
   };
 
   render() {
@@ -23,6 +23,7 @@ export default class Menu extends Component {
         className="menu-component"
         onMouseEnter={this.expandMenu}
         onMouseOut={this.collapseMenu}
+        style={{ width: this.state.expandedMenu }}
       >
         <nav>
           {" "}
