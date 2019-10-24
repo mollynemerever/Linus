@@ -1,32 +1,31 @@
 import React, { Component } from "react";
 import "../App.css";
 
-export default class AccountSettings extends Component {
+export default class PrivacySettings extends Component {
   render() {
     return (
-      <div className="account-settings">
+      <div className="privacy-settings">
         {" "}
-        <header>Account Settings </header>
-        <p>Default Currency </p>
+        <header>Privacy Settings </header>
+        <p>Make Profile Private </p>
         <small>
           {" "}
-          This is the default currency that all of your valuations will be
-          traslated to.{" "}
+          Your profile with your wallet info will not be public or searchable.{" "}
         </small>
         <select>
           <option value="USD"> USD </option>
           <option value="CAD"> CAD </option>
         </select>
-        <p> Accounting Methodology </p>
+        <p> Search Privacy </p>
         <small>
           {" "}
           This is the methodology in which your tax and accounting documentation
           will be prepared.{" "}
         </small>
-        <select>
-          <option value="FIFO"> FIFO </option>
-          <option value="LIFO"> LIFO </option>
-        </select>
+        <label class="switch">
+          <input type="checkbox" />
+          <span class="slider round" />
+        </label>
       </div>
     );
   }
