@@ -14,3 +14,29 @@
   width: 100%;
   background: grey;
 }
+
+.main-content {
+  margin-left: 300px;
+  height: 100%;
+}
+
+.account-settings {
+  color: grey;
+  background-color: white;
+  width: 350px;
+  height: 200px;
+}
+
+.account-settings small {
+  font-size: 12px;
+}
+
+.account-settings p {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.account-settings header {
+  font-size: 18px;
+  font-weight: bold;
+}
