@@ -13,10 +13,11 @@ export default class AccountSettings extends Component {
           This is the default currency that all of your valuations will be
           traslated to.{" "}
         </small>
-        <select>
+        <select style={{ color: "black" }}>
           <option value="USD"> USD </option>
           <option value="CAD"> CAD </option>
         </select>
+        <hr />
         <p> Accounting Methodology </p>
         <small>
           {" "}
