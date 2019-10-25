@@ -31,14 +31,17 @@ export default class PrivacySettings extends Component {
             {" "}
             Your profile with your wallet info will not be public or searchable.{" "}
           </small>
-          <label className="switch">
-            <input
-              type="checkbox"
-              onClick={this.updateProfilePrivacy}
-              defaultChecked={this.state.profilePrivacy}
-            />
-            <span className="slider round" />
-          </label>
+          <div className="form">
+            <span> {this.state.profilePrivacy ? "On" : "Off"} </span>
+            <label className="switch">
+              <input
+                type="checkbox"
+                onClick={this.updateProfilePrivacy}
+                defaultChecked={this.state.profilePrivacy}
+              />
+              <span className="slider round" />
+            </label>
+          </div>
         </div>
         <hr />
         <div className="card-bottom">
@@ -48,15 +51,18 @@ export default class PrivacySettings extends Component {
             This is the methodology in which your tax and accounting
             documentation will be prepared.{" "}
           </small>
-          <label className="switch">
-            <input
-              type="checkbox"
-              className="checkbox"
-              onClick={this.updateSearchPrivacy}
-              defaultChecked={this.state.searchPrivacy}
-            />
-            <span className="slider round" />
-          </label>
+          <div className="form">
+            <span> {this.state.searchPrivacy ? "On" : "Off"} </span>
+            <label className="switch">
+              <input
+                type="checkbox"
+                className="checkbox"
+                onClick={this.updateSearchPrivacy}
+                defaultChecked={this.state.searchPrivacy}
+              />
+              <span className="slider round" />
+            </label>
+          </div>
         </div>
       </div>
     );
