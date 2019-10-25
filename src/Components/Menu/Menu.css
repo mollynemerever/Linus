@@ -38,3 +38,13 @@ a:hover {
   white-space: nowrap;
   overflow-x: hidden;
 }
+
+nav {
+  margin-top: 40px;
+}
+
+span.company-title {
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 30px;
+}

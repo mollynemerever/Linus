@@ -14,12 +14,10 @@ export default class PrivacySettings extends Component {
   //depends upon state
 
   updateProfilePrivacy = () => {
-    console.log("inside update profile privacy");
     this.setState({ profilePrivacy: !this.state.profilePrivacy });
   };
 
   updateSearchPrivacy = () => {
-    console.log("inside update search privacy");
     this.setState({ searchPrivacy: !this.state.searchPrivacy });
   };
   render() {
@@ -33,13 +31,13 @@ export default class PrivacySettings extends Component {
             {" "}
             Your profile with your wallet info will not be public or searchable.{" "}
           </small>
-          <label class="switch">
+          <label className="switch">
             <input
               type="checkbox"
               onClick={this.updateProfilePrivacy}
-              checked={this.state.profilePrivacy}
+              defaultChecked={this.state.profilePrivacy}
             />
-            <span class="slider round" />
+            <span className="slider round" />
           </label>
         </div>
         <hr />
@@ -50,14 +48,14 @@ export default class PrivacySettings extends Component {
             This is the methodology in which your tax and accounting
             documentation will be prepared.{" "}
           </small>
-          <label class="switch">
+          <label className="switch">
             <input
               type="checkbox"
-              class="checkbox"
+              className="checkbox"
               onClick={this.updateSearchPrivacy}
-              checked={this.state.searchPrivacy}
+              defaultChecked={this.state.searchPrivacy}
             />
-            <span class="slider round" />
+            <span className="slider round" />
           </label>
         </div>
       </div>
