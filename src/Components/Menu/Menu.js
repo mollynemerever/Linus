@@ -5,7 +5,7 @@ export default class Menu extends Component {
   constructor() {
     super();
     this.state = {
-      expandedMenu: "55px"
+      expandedMenu: "60px"
     };
   }
 
@@ -14,7 +14,7 @@ export default class Menu extends Component {
   };
 
   collapseMenu = () => {
-    this.setState({ expandedMenu: "55px" });
+    this.setState({ expandedMenu: "60px" });
   };
 
   render() {
@@ -27,11 +27,11 @@ export default class Menu extends Component {
       >
         <nav>
           {" "}
-          Linus
+          <span className="company-title">Linus</span>
           <div className="menu-items">
             <ul>
               <li>
-                <span class="fas fa-user-circle fa-sm fa-fw" />
+                <span className="fas fa-user-circle fa-sm fa-fw" />
                 <a
                   href="https://www.getlinus.io"
                   target="_blank"
@@ -42,7 +42,7 @@ export default class Menu extends Component {
                 </a>
               </li>
               <li>
-                <span class="fas fa-file-invoice-dollar fa-sm fa-fw" />
+                <span className="fas fa-file-invoice-dollar fa-sm fa-fw" />
                 <a
                   href="https://www.getlinus.io"
                   target="_blank"
@@ -53,7 +53,7 @@ export default class Menu extends Component {
                 </a>
               </li>
               <li>
-                <span class="fas fa-piggy-bank fa-sm fa-fw" />
+                <span className="fas fa-piggy-bank fa-sm fa-fw" />
                 <a
                   href="https://www.getlinus.io"
                   target="_blank"
@@ -64,7 +64,7 @@ export default class Menu extends Component {
                 </a>
               </li>
               <li>
-                <span class="fas fa-book-open fa-sm fa-fw" />
+                <span className="fas fa-book-open fa-sm fa-fw" />
                 <a
                   href="https://www.getlinus.io"
                   target="_blank"
@@ -75,7 +75,7 @@ export default class Menu extends Component {
                 </a>
               </li>
               <li>
-                <span class="fas fa-store fa-sm fa-fw" />
+                <span className="fas fa-store fa-sm fa-fw" />
                 <a
                   href="https://www.getlinus.io"
                   target="_blank"
