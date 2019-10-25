@@ -40,6 +40,7 @@ export default class PrivacySettings extends Component {
                   type="checkbox"
                   onClick={this.updateProfilePrivacy}
                   defaultChecked={this.state.profilePrivacy}
+                  aria-label="profile privacy"
                 />
                 <span className="slider round" />
               </label>
@@ -55,6 +56,7 @@ export default class PrivacySettings extends Component {
               <span> {this.state.searchPrivacy ? "On" : "Off"} </span>
               <label className="switch">
                 <input
+                  aria-label="search privacy"
                   type="checkbox"
                   className="checkbox"
                   onClick={this.updateSearchPrivacy}

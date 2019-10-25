@@ -33,6 +33,7 @@ export default class Menu extends Component {
               <li>
                 <span className="fas fa-user-circle fa-sm fa-fw" />
                 <a
+                  aria-label="Linus Site (New Window)"
                   href="https://www.getlinus.io"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -44,6 +45,7 @@ export default class Menu extends Component {
               <li>
                 <span className="fas fa-file-invoice-dollar fa-sm fa-fw" />
                 <a
+                  aria-label="Linus Site (New Window)"
                   href="https://www.getlinus.io"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -55,6 +57,7 @@ export default class Menu extends Component {
               <li>
                 <span className="fas fa-piggy-bank fa-sm fa-fw" />
                 <a
+                  aria-label="Linus Site (New Window)"
                   href="https://www.getlinus.io"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -66,6 +69,7 @@ export default class Menu extends Component {
               <li>
                 <span className="fas fa-book-open fa-sm fa-fw" />
                 <a
+                  aria-label="Linus Site (New Window)"
                   href="https://www.getlinus.io"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -77,6 +81,7 @@ export default class Menu extends Component {
               <li>
                 <span className="fas fa-store fa-sm fa-fw" />
                 <a
+                  aria-label="Linus Site (New Window)"
                   href="https://www.getlinus.io"
                   target="_blank"
                   rel="noopener noreferrer"

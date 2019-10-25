@@ -37,9 +37,16 @@ export default class AccountSettings extends Component {
               <select
                 value={this.state.currency}
                 onChange={this.handleCurrencyChange}
+                aria-label="currency"
               >
-                <option value="CAD"> CAD </option>
-                <option value="USD"> USD </option>
+                <option name="CAD" value="CAD">
+                  {" "}
+                  CAD{" "}
+                </option>
+                <option name="USD" value="USD">
+                  {" "}
+                  USD{" "}
+                </option>
               </select>
             </div>
             <hr />
@@ -53,9 +60,16 @@ export default class AccountSettings extends Component {
               <select
                 value={this.state.accountingMethod}
                 onChange={this.handleAccountingChange}
+                aria-label="accounting method"
               >
-                <option value="FIFO"> FIFO </option>
-                <option value="LIFO"> LIFO </option>
+                <option value="FIFO" name="FIFO">
+                  {" "}
+                  FIFO{" "}
+                </option>
+                <option value="LIFO" name="LIFO">
+                  {" "}
+                  LIFO{" "}
+                </option>
               </select>
             </div>
           </div>
