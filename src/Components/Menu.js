@@ -10,7 +10,7 @@ export default class Menu extends Component {
   }
 
   expandMenu = () => {
-    this.setState({ expandedMenu: "250px" });
+    this.setState({ expandedMenu: "200px" });
   };
 
   collapseMenu = () => {

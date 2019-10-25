@@ -10,24 +10,36 @@
 }  */
 
 .App {
-  height: 100%;
+  height: 100% !important;
   width: 100%;
   background: rgb(236, 236, 236);
+  overflow: auto;
 }
 
 .main-content {
-  margin-left: 300px;
+  margin-left: 250px;
   height: 100%;
+  margin-top: 50px;
 }
 
 .account-settings,
 .privacy-settings {
   color: grey;
   background-color: white;
-  width: 350px;
+  width: 500px;
   height: 200px;
+  padding: 10px;
+  margin: 10px;
 }
 
+/* select {
+  background-color: #414141;
+  opacity: 0.15;
+} */
+
+div.card-top {
+  margin-bottom: 5px;
+}
 .account-settings small,
 .privacy-settings small {
   font-size: 12px;
