@@ -22,9 +22,6 @@
   margin: 10px;
 }
 
-div.card-top {
-  margin-bottom: 5px;
-}
 .account-settings small,
 .privacy-settings small {
   font-size: 12px;
@@ -79,6 +76,17 @@ span.fas.fa-user {
 
 .form {
   margin-top: 2px;
+}
+
+.form select {
+  background-color: rgb(236, 236, 236);
+}
+
+div.card-content {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* toggle button, help from W3*/
