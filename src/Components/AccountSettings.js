@@ -25,33 +25,41 @@ export default class AccountSettings extends Component {
       <div className="account-settings">
         {" "}
         <header>Account Settings </header>
-        <p>Default Currency </p>
-        <small>
-          {" "}
-          This is the default currency that all of your valuations will be
-          traslated to.{" "}
-        </small>
-        <select
-          value={this.state.currency}
-          onChange={this.handleCurrencyChange}
-        >
-          <option value="USD"> USD </option>
-          <option value="CAD"> CAD </option>
-        </select>
-        <hr />
-        <p> Accounting Methodology </p>
-        <small>
-          {" "}
-          This is the methodology in which your tax and accounting documentation
-          will be prepared.{" "}
-        </small>
-        <select
-          value={this.state.accountingMethod}
-          onChange={this.handleAccountingChange}
-        >
-          <option value="FIFO"> FIFO </option>
-          <option value="LIFO"> LIFO </option>
-        </select>
+        <div className="card-content">
+          <div className="test">
+            <p>Default Currency </p>
+            <small>
+              {" "}
+              This is the default currency that all of your valuations will be
+              traslated to.{" "}
+            </small>
+            <div className="form">
+              <select
+                value={this.state.currency}
+                onChange={this.handleCurrencyChange}
+              >
+                <option value="CAD"> CAD </option>
+                <option value="USD"> USD </option>
+              </select>
+            </div>
+            <hr />
+            <p> Accounting Methodology </p>
+            <small>
+              {" "}
+              This is the methodology in which your tax and accounting
+              documentation will be prepared.{" "}
+            </small>
+            <div className="form">
+              <select
+                value={this.state.accountingMethod}
+                onChange={this.handleAccountingChange}
+              >
+                <option value="FIFO"> FIFO </option>
+                <option value="LIFO"> LIFO </option>
+              </select>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
