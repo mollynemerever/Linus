@@ -12,7 +12,6 @@ export default class AccountSettings extends Component {
 
   handleAccountingChange = e => {
     e.preventDefault();
-    console.log(e.target.value);
     this.setState({ accountingMethod: e.target.value });
   };
 
